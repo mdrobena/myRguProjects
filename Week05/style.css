@@ -1,0 +1,26 @@
+body{
+     background-color: goldenrod;
+ }
+
+main{
+    background-color: aliceblue;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+#cont1{
+    background-color: aquamarine;
+
+}
+
+#cont2{
+    background-color: crimson;
+
+}
+
+#cont3{
+    background-color: hotpink;
+
+}

@@ -1,0 +1,15 @@
+body{
+    background: radial-gradient(grey, green, yellow);
+
+}
+img{
+    border-style: double;
+    border: 7px solid blue;
+    width: 250px;
+    height: 150px;
+    border-radius: 50%;
+}
+h1, h2, h3{
+    font-family: "Indie Flower";
+    text-shadow: 2px 2px;
+}
