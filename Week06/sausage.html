@@ -5,12 +5,11 @@
     <title>Specs, Mugs & Sausage Rolls</title>
 </head>
 <body>
-    <body>
         <form>
             Age: <br>
             <input type="number" name="$age">
         </form>
-        <p>
+
             <?php
                 if($age > 16 && $age < 18){
                     echo "Specs.";
@@ -18,9 +17,12 @@
                 else if ($age > 18 && $age < 21){
                     echo "Mugs.";
                 }
-                else(echo "Sausage Rolls.";)
+                else if ($age > 21){
+                    echo "Mugs.";
+                }
+                else(echo "Too young!";)
             ?>
-        </p>
-    </body>
+
+
 </body>
 </html>
