@@ -7,4 +7,17 @@
  */
 
 echo "Hello World";
+$myName = "Jeff";
+$myAge = 99;
+echo "<br>";
+echo "My name is " . $myName . "and I am " . $myAge . "years old.";
+
+$name = "Adam";
+if($myName == $name){
+    print "That's right";
+}
+else {
+    print "Yeah, right!";
+}
+
 ?>
