@@ -10,9 +10,9 @@ echo "Hello World";
 $myName = "Jeff";
 $myAge = 99;
 echo "<br>";
-echo "My name is " . $myName . "and I am " . $myAge . "years old.";
-
-$name = "Adam";
+echo "My name is " . $myName . " and I am " . $myAge . " years old.";
+echo "<br>";
+$name = "Jeff";
 if($myName == $name){
     print "That's right";
 }
