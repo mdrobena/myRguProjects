@@ -10,7 +10,7 @@ for($x = 1; $x < 31; $x++){
         print "On the ".$x. "st of the month no products are available.<br>";
         print "<br>";
     }
-    else if($x % 2 == 0){
+    else if($x % 2 == 0 && ($x / 4 * 4) == $x){
         print "On the ".$x. "th of the month specs are available.<br>";
         print "<br>";
     }
