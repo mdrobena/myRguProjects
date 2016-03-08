@@ -6,7 +6,7 @@
  * Time: 10:04
  */
 for($x = 1; $x < 31; $x++){
-    if($x = 1){
+    if($x == 1){
         print "On the ".$x. "st of the month no products are available.";
     }
     else if($x % 2 == 0){
