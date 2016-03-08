@@ -7,15 +7,15 @@
  */
 for($x = 1; $x < 31; $x++){
     if($x == 1){
-        print "On the ".$x. "st of the month no products are available.";
+        print "On the ".$x. "st of the month no products are available.<br>";
     }
     else if($x % 2 == 0){
-        print "On the ".$x. "th of the month specs are available.";
+        print "On the ".$x. "th of the month specs are available.<br>";
     }
     else if($x % 3 == 0){
-        print "On the ".$x. "th of the mugs specs are available.";
+        print "On the ".$x. "th of the mugs specs are available.<br>";
     }
     else if($x % 4 == 0){
-        print "On the ".$x. "th of the month sausage rolls are available.";
+        print "On the ".$x. "th of the month sausage rolls are available.<br>";
     }
 }
