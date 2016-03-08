@@ -14,7 +14,7 @@ echo "My name is " . $myName . " and I am " . $myAge . " years old.";
 echo "<br>";
 $name = "Jeff";
 if($myName == $name){
-    print "That's right";
+    print "That's right.";
 }
 else {
     print "Yeah, right!";
