@@ -18,7 +18,7 @@ for($x = 1; $x < 31; $x++){
         print "On the ".$x. "th of the month mugs are available.<br>";
         print "<br>";
     }
-    else if($x % 4 == 0){
+    else if($x % 4 == 0 && ($x / 4 * 4) == $x){
         print "On the ".$x. "th of the month sausage rolls are available.<br>";
         print "<br>";
     }
