@@ -1,4 +1,5 @@
 <?php
+session_start();
 /**
  * Created by PhpStorm.
  * User: 1511989
@@ -27,6 +28,6 @@ else{
     }
 
 }
-session_start();
-$user = $_SESSION['username'];
+
+$_SESSION["username"] = &$username;
 ?>
