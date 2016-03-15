@@ -5,7 +5,7 @@
  * Date: 08/03/2016
  * Time: 09:50
  */
-$provisionedActivities = array("Specs", "Drugs", "Rock and Roll");
+$provisionedActivities = array("Specs", "Mugs", "Sausage Rolls");
 
 foreach($provisionedActivities as $x){
     print "<p>$x</p>";
