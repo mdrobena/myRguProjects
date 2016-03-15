@@ -19,6 +19,7 @@ session_start()
 <p>The currently logged in user: <?php echo $_SESSION["username"]; ?></p>
 
 <?php
+include("dbconnect.php");
 $sql = "SELECT * FROM users";
 
 $result = mysqli_query($db, $sql);
