@@ -20,7 +20,7 @@ session_start()
 
 <?php
 include("dbconnect.php");
-$sql = "SELECT * FROM users";
+$sql = "SELECT uid FROM users";
 
 $result = mysqli_query($db, $sql);
 echo $result;
