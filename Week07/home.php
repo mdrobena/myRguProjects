@@ -5,8 +5,6 @@
  * Date: 14/03/2016
  * Time: 10:43
  */
-include("login.php");
-
 <html>
 <head>
     <meta charset="utf-8">
@@ -15,7 +13,7 @@ include("login.php");
 </head>
 <body>
 <h1>Hello</h1>
-<p>The currently logged in user: <?php echo $_POST["$username"]; ?></p>
+<p>The currently logged in user: <?php echo $_POST['username']; ?></p>
 
 </body>
 </html>
