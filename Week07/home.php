@@ -13,6 +13,8 @@
 </head>
 <body>
 <h1>Hello</h1>
+<p>The currently logged in user: <?php echo $_POST['$username']; ?></p>
+
 </body>
 </html>
 
