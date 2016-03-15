@@ -9,11 +9,11 @@
 <head>
     <meta charset="utf-8">
     <title>Welcome</title>
-    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link rel="stylesheet" href="style.css" href="Week07/login.php" type="text/css"/>
 </head>
 <body>
 <h1>Hello</h1>
-<p>The currently logged in user: <?php echo $_POST['username']; ?></p>
+<p>The currently logged in user: <?php echo $_GET['username']; ?></p>
 
 </body>
 </html>
