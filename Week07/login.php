@@ -13,6 +13,7 @@ if(empty($_POST["username"]) || empty($_POST["password"])){
 }
 else{
     $username = $_POST['username'];
+    $_SESSION["username"] = $username;
     $password = $_POST['password'];
 
 
@@ -29,5 +30,5 @@ else{
 
 }
 
-$_SESSION["username"] = &$username;
+
 ?>
