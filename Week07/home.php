@@ -1,3 +1,6 @@
+<?php
+session_start()
+?>
 <!DOCTYPE html>
 /**
  * Created by PhpStorm.
@@ -13,7 +16,7 @@
 </head>
 <body>
 <h1>Hello</h1>
-<p>The currently logged in user: <?php echo $user; ?></p>
+<p>The currently logged in user: <?php echo $_SESSION["username"]; ?></p>
 
 </body>
 </html>
