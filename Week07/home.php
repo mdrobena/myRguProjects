@@ -21,9 +21,17 @@ session_start()
 <?php
 include("dbconnect.php");
 $sql = "SELECT uid FROM users";
-
 $result = mysqli_query($db, $sql);
-echo $result;
+
+if(mysqli_num_rows($result) > 0) {
+    while ($row = mysqli_fetch_assoc($result)) {
+        echo "id: " . $row["uid"] . "<br>";
+    }
+}
+else{
+    echo "0 results";
+}
+
 ?>
 
 </body>
