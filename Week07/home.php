@@ -18,10 +18,12 @@ session_start()
 <h1>Hello</h1>
 <p>The currently logged in user: <?php echo $_SESSION["username"]; ?></p>
 
-$sql = "SELECT * FROM users;
+<?php
+$sql = "SELECT * FROM users";
 
 $result = mysqli_query($db, $sql);
 echo $result;
+?>
 
 </body>
 </html>
