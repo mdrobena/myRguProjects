@@ -12,7 +12,7 @@
     <!--<link rel="stylesheet" href="style.css" type="text/css"/-->
 </head>
 <body>
-<h1>Movies in the marvelmovies db:</h1>
+<h1>Movies in the marvelmovies db made by 'Marvel Studios':</h1>
 
 <?php
 include("dbconnect.php");
