@@ -8,7 +8,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>All Movies</title>
+    <title>Marvel Studios Movies</title>
     <!--<link rel="stylesheet" href="style.css" type="text/css"/-->
 </head>
 <body>
