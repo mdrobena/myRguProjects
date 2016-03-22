@@ -15,7 +15,7 @@
 <h1>Movies in the marvelmovies db:</h1>
 
 <?php
-include("Week07/dbconnect.php");
+include("dbconnect.php");
 $sql = "SELECT title FROM marvelmovies";
 $result = mysqli_query($db, $sql);
 
