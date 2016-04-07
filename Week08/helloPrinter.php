@@ -5,5 +5,5 @@
  * Date: 22/03/2016
  * Time: 08:58
  */
-echo "Hello ".$_GET["v"];
+echo "Hello ".$_GET["v"]."!";
 ?>
