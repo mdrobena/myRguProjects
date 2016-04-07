@@ -19,7 +19,7 @@
                 echo "<option>{$firstname} {$lastname}</option>";
             }
             ?>
-        </select>
+        </select><br>
         <label>Enter the name of the villan:</label><br>
         <input type="text" name="villan"><br>
         <input type="submit" value="Submit">
