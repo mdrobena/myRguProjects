@@ -15,7 +15,7 @@ $spower = $_POST["spower"];
 $sql_query = "INSERT INTO superheros (firstName, lastName, mainSuperpower) VALUES ('$fname', '$lname', '$spower')";
 
 if(mysqli_query($db, $sql_query)){
-    echo "Successful!";
+
 }
 else{
     echo "Error ".$sql_query."<br>".mysqli_error($db);
