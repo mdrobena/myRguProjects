@@ -15,7 +15,7 @@
 
     if(isset($_GET['id'])){
         $superheroID = $_GET['id'];
-        $sql = "SELECT * FROM superheroBattles WHERE superheroID == '$superheroID'";
+        $sql = "SELECT * FROM superheroBattles WHERE superheroID = '$superheroID'";
     }
     else{
         $sql = "SELECT * FROM superheroBattles";
