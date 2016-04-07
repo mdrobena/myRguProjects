@@ -8,7 +8,7 @@
     <h2>Battles fought by superheros!</h2>
     <form action="insertbattle.php" method="post">
         <label>Please select a superhero:</label><br>
-        <select>
+        <select name="superhero">
             <?php
             include ("dbconnect.php");
             $sql_query = "SELECT * FROM superheros";
@@ -16,13 +16,14 @@
             while($row = $result->fetch_array()){
                 $firstname = $row['firstName'];
                 $lastname = $row['lastName'];
-                echo "<option>{$firstname} {$lastname}</option>";
+                $superheroID = $row['superheroID'];
+                echo "<option value='{$superheroID}'>{$firstname} {$lastname}</option>";
             }
             ?>
         </select><br>
         <label>Enter the name of the villan:</label><br>
-        <input type="text" name="villan"><br>
-        <input type="submit" value="Submit">
+        <input type="text" name="villan" placeholder="Villan Fought"><br>
+        <input type="submit" value="Record battle">
     </form>
 </body>
 </html>
