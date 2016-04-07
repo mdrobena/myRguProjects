@@ -12,7 +12,7 @@ $result = $db->query($sql_query);
 while($row = $result->fetch_array()){
     $firstName = $row['firstName'];
     $lastName = $row['lastName'];
-    $mainSuperpower = $row['superPower'];
+    $mainSuperpower = $row['mainSuperpower'];
     echo "<article>
             <h3>{$firstName} {$lastName}</h3>
             <p>This superhero main power is <strong>{$mainSuperpower}</strong></p>
