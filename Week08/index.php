@@ -9,9 +9,9 @@
     <h1>The Superhero System</h1>
     <h2>Superhero Home Page</h2>
 </header>
-<p>What would you like to do></p>
+<p>What would you like to do?</p>
 <ul>
-    <li><a href="insertsuperhero.php">Insert a superhero</a></li>
+    <li><a href="superheroform.html">Insert a superhero</a></li>
     <li><a href="showsuperheros.php">Show all superheros</a></li>
     <li><a href="battle.php">Insert a battle</a></li>
     <li><a href="showbattles.php">Show all battles</a></li>
