@@ -10,7 +10,7 @@ $password = $_POST["password"];
 
 if($name == "Mike" && $password == "mysecretpassword"){
     session_start();
-    $_SESSION['access_level'] = "standarfuser";
+    $_SESSION['access_level'] = "standarduser";
     /*setcookie('access_level', 'standarduser');*/
 }
 
