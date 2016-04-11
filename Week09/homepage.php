@@ -5,7 +5,9 @@
  * Date: 11/04/2016
  * Time: 09:39
  */
-$access_level = $_COOKIE['access_level'];
+session_start();
+$access_level = $_SESSION['access_level'];
+/*$access_level = $_COOKIE['access_level'];*/
 
 displayAccessLevelInformation($access_level);
 
