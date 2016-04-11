@@ -14,7 +14,7 @@ function displayAccessLevelInformation($access_level){
         echo "<p>You are currently logged in as a standard user!</p>";
     }
     elseif($access_level == "rootuser"){
-        echo "<p>You are currently logged in a root user.</p><br>";
+        echo "<p>You are currently logged in a root user.</p>";
         echo "<p>You now have access to additional administrative features.<?p>";
     }
 }
