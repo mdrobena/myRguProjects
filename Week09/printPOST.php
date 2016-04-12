@@ -7,11 +7,11 @@
 <body>
     <main>
         <article>
-            <h1><?php $_POST['title'] ?></h1>
+            <h1><?php echo $_POST['title'] ?></h1>
             <br><br>
-            <strong>Category: <?php $_POST['animal']?></strong>
+            <strong>Category: <?php echo $_POST['animal']?></strong>
             <br><br>
-            <p><?php $_POST['box']?></p>
+            <p><?php echo $_POST['box']?></p>
         </article>
     </main>
 </body>
