@@ -8,7 +8,7 @@
     if($_SERVER['REQUEST_METHOD'] === GET){
 ?>
 <body>
-<form action="addblogpost.php" method="post">
+<form action="<? echo $_SERVER['PHP_SELF']?>" method="post">
     <label>Title</label>
     <br>
     <input type="text" name="title">
@@ -28,16 +28,17 @@
     <input type="submit" value="Submit">
 </form>
 
-<?  }
+<?
+    }
     elseif($_SERVER['REQUEST_METHOD'] === POST){
         $title = $_POST['title'];
         $category = $_POST['animal'];
         $blog =$_POST['box'];
-        print ("<h1>{title}</h1>");
+        print ("<h1>{$title}</h1>");
         echo '<br>';
         print ("<strong>Category: {$category}</strong>");
         echo '<br>';
-        print ("<p>{blog}</p>");
+        print ("<p>{$blog}</p>");
     }
     else{
 
