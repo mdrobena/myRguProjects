@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>SEND post</title>
 </head>
+<?php
+    if($_SERVER['REQUEST_METHOD'] === GET){
+?>
 <body>
 <form action="addblogpost.php" method="post">
     <label>Title</label>
@@ -24,13 +27,9 @@
     <br><br>
     <input type="submit" value="Submit">
 </form>
-</body>
-</html>
-<?php
-    if($_SERVER['REQUEST_METHOD'] === GET){
 
-    }
-    elseif($_SERVER['REQUEST_METHOD'] === POST) {
+<?  }
+    elseif($_SERVER['REQUEST_METHOD'] === POST){
         $title = $_POST['title'];
         $category = $_POST['animal'];
         $blog =$_POST['box'];
@@ -40,4 +39,9 @@
         echo '<br>';
         print ("<p>{blog}</p>");
     }
+    else{
+
+    }
 ?>
+</body>
+</html>
