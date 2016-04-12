@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>SEND post</title>
+    <title>Add Blog</title>
 </head>
 <?php
-    if($_SERVER['REQUEST_METHOD'] === GET){
+    if($_SERVER['REQUEST_METHOD'] === 'GET'){
 ?>
 <body>
 <form action="<? echo $_SERVER['PHP_SELF']?>" method="post">
@@ -30,7 +30,7 @@
 
 <?
     }
-    elseif($_SERVER['REQUEST_METHOD'] === POST){
+    elseif($_SERVER['REQUEST_METHOD'] === 'POST'){
         $title = $_POST['title'];
         $category = $_POST['animal'];
         $blog =$_POST['box'];
