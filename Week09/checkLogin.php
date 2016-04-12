@@ -9,9 +9,9 @@ $name = $_POST["name"];
 $password = $_POST["password"];
 
 if($name == "Mike" && $password == "mysecretpassword"){
-    session_start();
-    $_SESSION['access_level'] = "standarduser";
-    /*setcookie('access_level', 'standarduser');*/
+    /*session_start();
+    $_SESSION['access_level'] = "standarduser";*/
+    setcookie('access_level', 'standarduser');
 }
 
 header("Location:homepage.php");
