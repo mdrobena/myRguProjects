@@ -1,0 +1,65 @@
+@import "colours.css";
+
+body{
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logo{
+    width: 150px;
+    height: 100px;
+    float: left;
+}
+
+nav{
+    height: 450px;
+    }
+
+nav>ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+
+}
+
+
+nav>ul>li a{
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 25px;
+
+}
+
+a:link{
+    color: black;
+}
+
+a:hover{
+    color: aqua;
+}
+
+article{
+    height: 450px;
+}
+article.p{
+    padding: 10px;
+    line-height: 2.5;
+}
+
+footer{
+    text-align: left;
+    padding-left: 10px;
+}
+
+h1{
+    font-size: 30px;
+    padding-top: 5px;
+}
+
+
+
