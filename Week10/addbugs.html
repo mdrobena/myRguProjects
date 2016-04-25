@@ -25,34 +25,35 @@
     <aside class="grid-20">
         <nav>
             <ul>
-                <li><a href="bugs.html">All Bug Items</a></li>
-                <li><a href="bugs.html">Android Bugs</a></li>
-                <li><a href="bugs.html">iOS Bugs</a></li>
-                <li><a href="bugs.html">Windows Bugs</a></li>
-                <li><a href="bugs.html">Insert Bug</a></li>
+                <li><a href="showbugs.html">All Bug Items</a></li>
+                <li><a href="showbugs.html">Android Bugs</a></li>
+                <li><a href="showbugs.html">iOS Bugs</a></li>
+                <li><a href="showbugs.html">Windows Bugs</a></li>
+                <li><a href="addbugs.html">Insert Bug</a></li>
             </ul>
         </nav>
     </aside>
 
-    <form class="grid-80">
+    <form class="grid-80" action="showbugs.html" method="post">
         <fieldset>
             <table>
                 <tr>
                     <td><label>Bug Name</label></td>
-                    <td><input type="text" name="bugName" value="" maxlength="30"></td>
+                    <td><input type="text" name="bugName" value="" size="39" required></td>
                 </tr>
 
                 <tr>
                     <td><label>Bug Summary</label></td>
-                    <td><textarea name="summary" cols="30" rows="5"></textarea></td>
+                    <td><textarea name="summary" cols="30" rows="5" required></textarea></td>
                 </tr>
 
                 <tr>
                     <td><label>Bug Category</label></td>
-                    <td><input type="text" name="bugCategory" value="" maxlength="30"></td>
+                    <td><input type="text" name="bugCategory" value="" size="39" required></td>
                 </tr>
 
                 <tr>
+                    <td></td>
                     <td><input type="submit" value="Submit"></td>
                 </tr>
             </table>
