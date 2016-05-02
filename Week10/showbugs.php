@@ -49,7 +49,7 @@
                 echo "<article>
                 <h2>{$bugName}</h2>
                 <h3>{$bugCategory}</h3>
-                <p>{$bugSummary}</p>
+                <p>{$bugSummary}</p><br>
                 </article>";
             }
         }
