@@ -44,7 +44,7 @@ a:hover{
 }
 
 article{
-    height: 110px;
+    height: auto;
 }
 article.p{
     padding: 10px;
