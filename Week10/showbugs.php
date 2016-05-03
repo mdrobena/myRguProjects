@@ -37,12 +37,12 @@
     <section class="grid-80">
         <?php
         include("dbconnect.php");
-        if(isset($_GET["BugCategory"]) === "Android" || "iOS" || "Windows"){
+        if($_GET["BugCategory"] === "Android" || "iOS" || "Windows"){
             $category = $_GET["BugCategory"];
-            $sql = "SELECT * FROM bugs WHERE BugCategory === $category ";
+            $sql = "SELECT * FROM bugs WHERE BugCategory = ".$category;
         }
 
-        elseif(isset($_GET["BugCategory"]) === "All"){
+        elseif($_GET["BugCategory"] === "All"){
             $sql = "SELECT * FROM bugs";
         }
 
