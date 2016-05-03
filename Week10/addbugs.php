@@ -47,13 +47,18 @@
                     </tr>
 
                     <tr>
-                        <td><label>Bug Summary</label></td>
-                        <td><textarea name="summary" cols="30" rows="5" required></textarea></td>
+                        <td><label>Bug Category</label></td>
+                        <td><select name="bugCategory" required>
+                                <option value ="Android">Android</option>
+                                <option value ="iOS">iOS</option>
+                                <option value ="Windows">Windows</option>
+                            </select>
+                        </td>
                     </tr>
 
                     <tr>
-                        <td><label>Bug Category</label></td>
-                        <td><input type="text" name="bugCategory" value="" size="30" required></td>
+                        <td><label>Bug Summary</label></td>
+                        <td><textarea name="summary" cols="30" rows="5" required></textarea></td>
                     </tr>
 
                     <tr>

@@ -1,4 +1,4 @@
-/*@import "colours.css";*/
+@import "colours.css";
 
 body{
     max-width: 960px;
@@ -12,8 +12,10 @@ body{
     float: left;
 }
 
+
+
 nav{
-    height: 450px;
+
     }
 
 nav>ul{
@@ -21,6 +23,7 @@ nav>ul{
     margin: 0px;
     padding: 0px;
     overflow: hidden;
+
 
 }
 
@@ -31,7 +34,7 @@ nav>ul>li a{
     text-decoration: none;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 25px;
+    font-size: 20px;
 
 }
 
@@ -43,10 +46,8 @@ a:hover{
     color: aqua;
 }
 
-article{
-    height: auto;
-}
-article.p{
+
+section.p{
     padding: 10px;
     line-height: 2.5;
 }
