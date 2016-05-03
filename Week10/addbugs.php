@@ -36,8 +36,8 @@
 
     <article class="grid-80">
     <?php
-        if($_SERVER['REQUEST METHOD'] === 'GET'){
-            ?>
+        if($_SERVER['REQUEST_METHOD'] === 'GET'){
+    ?>
             <form action = "<? echo $_SERVER['PHP_SELF']?>" method="post">
 
                 <table>
