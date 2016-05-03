@@ -36,9 +36,9 @@
 
     <article class="grid-80">
     <?php
-        if($_SERVER['REQEST METHOD']=== 'GET') {
+        if($_SERVER['REQUEST METHOD'] === 'GET'){
             ?>
-            <form action="<? echo $_SERVER['PHP_SELF']?>" method="post">
+            <form action = "<? echo $_SERVER['PHP_SELF']?>" method="post">
 
                 <table>
                     <tr>
@@ -65,19 +65,23 @@
             </form>
             <?
         }
-        elseif($_SERVER['REQUEST_METHOD']==='POST') {
+
+        elseif($_SERVER['REQUEST_METHOD'] === 'POST'){
             include("dbconnect.php");
             $bugName = $_POST['bugName'];
             $BugCategory = $_POST['bugCategory'];
             $BugSummary = $_POST['summary'];
-            $sql = "INSERT INTO bugs (bugName, BugCategory,BugSummary) VALUES ('$bugName', '$BugCategory','$BugSummary')";
-            if (mysqli_query($db, $sql)) {
+            $sql = "INSERT INTO bugs (bugName, BugCategory, BugSummary) VALUES ('$bugName', '$BugCategory','$BugSummary')";
 
-            } else {
+            if (mysqli_query($db, $sql)){
+            }
+
+            else{
                 echo "Error: " . $sql_query . "<br>" . mysqli_error($db);
             }
             header("location:showbugs.php");
         }
+
         else{
             header("location:index.php");
         }
