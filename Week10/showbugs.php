@@ -37,7 +37,7 @@
     <section class="grid-80">
         <?php
         include("dbconnect.php");
-        if($_GET["BugCategory"] === "Android" || "iOS" || "Windows") {
+        if(isset($_GET["BugCategory"]) === "Android" || "iOS" || "Windows"){
             $category = $_GET["BugCategory"];
             $sql = "SELECT * FROM bugs WHERE BugCategory === $category ";
         }
