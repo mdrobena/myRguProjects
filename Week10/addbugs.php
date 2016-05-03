@@ -33,10 +33,12 @@
             </ul>
         </nav>
     </aside>
+
+    <article class="grid-80">
     <?php
         if($_SERVER['REQEST METHOD']=== 'GET') {
             ?>
-            <form action="<? echo $_SERVER['PHP_SELF']?>" method="post" class="grid-80">
+            <form action="<? echo $_SERVER['PHP_SELF']?>" method="post">
 
                 <table>
                     <tr>
@@ -80,6 +82,7 @@
             header("location:index.php");
         }
             ?>
+    </article>
 </main>
 <!--Main finishes-->
 
