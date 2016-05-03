@@ -37,9 +37,9 @@
     <section class="grid-80">
         <?php
         include("dbconnect.php");
-        if($_GET["BugCategory"] === "Android" || "iOS" || "Windows"){
+        if($_GET["BugCategory"] === "Android" or "iOS" or "Windows"){
             $category = $_GET["BugCategory"];
-            $sql = "SELECT * FROM bugs WHERE BugCategory = ".$category;
+            $sql = "SELECT * FROM bugs WHERE BugCategory =".$category;
         }
 
         elseif($_GET["BugCategory"] === "All"){
@@ -48,8 +48,8 @@
 
         $result = mysqli_query($db, $sql);
 
-        if (mysqli_num_rows($result) > 0) {
-            while ($row = mysqli_fetch_assoc($result)) {
+        if (mysqli_num_rows($result) > 0){
+            while ($row = mysqli_fetch_assoc($result)){
                     $bugName = $row["bugName"];
                     $bugCategory = $row["BugCategory"];
                     $bugSummary = $row["BugSummary"];
