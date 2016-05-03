@@ -38,13 +38,13 @@
         <?php
         include("dbconnect.php");
         $sql = "";
-        if($_GET["bugCategory"] == "Android" or "iOS" or "Windows"){
-            $category = $_GET["BugCategory"];
+        if($_GET["bugCategory"] === "Android" or "iOS" or "Windows"){
+            $category = $_GET["bugCategory"];
             global $sql;
             $sql = "SELECT * FROM bugs WHERE BugCategory =".$category;
         }
 
-        elseif($_GET["bugCategory"] == "All"){
+        elseif($_GET["bugCategory"] === "All"){
             global $sql;
             $sql = "SELECT * FROM bugs";
         }
