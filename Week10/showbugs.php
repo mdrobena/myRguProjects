@@ -29,7 +29,7 @@
                 <li><a href="bugs.html">Android Bugs</a></li>
                 <li><a href="bugs.html">iOS Bugs</a></li>
                 <li><a href="bugs.html">Windows Bugs</a></li>
-                <li><a href="bugs.html">Insert Bug</a></li>
+                <li><a href="index.php">Insert Bug</a></li>
             </ul>
         </nav>
     </aside>
@@ -42,14 +42,14 @@
             $sql = "SELECT * FROM bugs WHERE BugCategory === $category ";
         }
 
-        else {
+        elseif(isset($_GET["BugCategory"]) === "All"){
             $sql = "SELECT * FROM bugs";
         }
 
-            $result = mysqli_query($db, $sql);
+        $result = mysqli_query($db, $sql);
 
-            if (mysqli_num_rows($result) > 0) {
-                while ($row = mysqli_fetch_assoc($result)) {
+        if (mysqli_num_rows($result) > 0) {
+            while ($row = mysqli_fetch_assoc($result)) {
                     $bugName = $row["bugName"];
                     $bugCategory = $row["BugCategory"];
                     $bugSummary = $row["BugSummary"];
@@ -58,15 +58,12 @@
                 <h3>{$bugCategory}</h3>
                 <p>{$bugSummary}</p><br>
                 </article>";
-                }
             }
+        }
 
         else{
             echo "0 results";
-
         }
-
-
     ?>
     </section>
 </main>

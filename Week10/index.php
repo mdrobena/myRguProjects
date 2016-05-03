@@ -25,7 +25,7 @@
     <aside class="grid-20">
         <nav>
             <ul>
-                <li><a href="showbugs.php">All Bug Items</a></li>
+                <li><a href="showbugs.php?bugCategory = All">All Bug Items</a></li>
                 <li><a href="showbugs.php?bugCategory = Android">Android Bugs</a></li>
                 <li><a href="showbugs.php?bugCategory = iOS">iOS Bugs</a></li>
                 <li><a href="showbugs.php?bugCategory = Windows">Windows Bugs</a></li>
